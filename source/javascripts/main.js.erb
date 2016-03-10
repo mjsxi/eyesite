@@ -1,0 +1,15 @@
+//= require 'scripts/_jquery.js.erb'
+
+//= require 'scripts/_scrollify.js.erb'
+
+$('#fullpage').fullpage({
+  anchors: ['home', 'about', 'workmanship', 'bespoke', 'products', 'location']
+});
+
+$('#mob_nav, .nav_click').click(function(){
+    $('.m-nav').toggleClass('active');
+});
+
+$('.products__glasses div').on('click', function(){
+    $(this).toggleClass('active');
+});
